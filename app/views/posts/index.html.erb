@@ -1,0 +1,9 @@
+<h1>Posts#index</h1>
+
+<% @posts.each do |post| %>
+<a href="/posts/<%= post.id %>">
+  <%= post.title %>
+</a>
+<hr>
+<% end %>
+<a href="/posts/new">글쓰기</a>
