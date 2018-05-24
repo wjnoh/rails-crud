@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get '/posts/:post_id' => 'posts#read'
 
   # U 수정하기
-  get '/posts/edit/:post_id' => 'posts#edit'
+  get '/posts/:post_id/edit' => 'posts#edit'
   patch '/posts/:post_id' => 'posts#update'
   
   # D 지우기
